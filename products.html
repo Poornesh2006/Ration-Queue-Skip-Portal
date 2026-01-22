@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TN Ration Queue – Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #22c55e, #ffffff, #f97316);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 0;
+    }
+    .products {
+      width: 90%;
+      max-width: 900px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+    }
+    .gov-logo {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 24px;
+      margin: 0 0 30px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #22c55e, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.85);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: scale(1.05); }
+    .card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #f97316, #22c55e);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #22c55e, #f97316);
+    }
+    .back {
+      background: #6b7280;
+    }
+    .back:hover { background: #4b5563; }
+
+    /* Language selector */
+    .language-select {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-select select {
+      appearance: none;
+      padding: 8px 36px 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all .25s ease;
+      outline: none;
+    }
+    .language-select::after {
+      content: "▾";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000;
+      font-size: 12px;
+      pointer-events: none;
+    }
+    .language-select select:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body onload="showProducts()">
+
+  <div class="products">
+    <!-- language dropdown -->
+    <div class="language-select">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+    </div>
+
+    <img src="images/TamilNadu_Logo.svg.png" alt="TN Logo" class="gov-logo">
+    <h2 id="title">Available Products</h2>
+
+    <div id="cards" class="card-container"></div>
+
+    <div class="buttons">
+      <button class="btn back" id="backBtn" onclick="window.location.href='dashboard.html'">⬅ Back</button>
+      <button class="btn" id="nextBtn" onclick="window.location.href='buy-products.html'">Next ➡</button>
+    </div>
+  </div>
+
+  <script>
+    const productData = {
+      "PHH": [
+        { name_en: "Rice – 12Kg per person, +5Kg extra", name_ta: "அரிசி – ஒருவருக்கு 12Kg, கூடுதல் 5Kg", img: "rice.png" },
+        { name_en: "Wheat – 5Kg rural / 10Kg urban", name_ta: "கோதுமை – கிராமம் 5Kg / நகரம் 10Kg", img: "wheat.png" },
+        { name_en: "Sugar – 0.5Kg per unit (max 2Kg)", name_ta: "சர்க்கரை – 0.5Kg (அதிகபட்சம் 2Kg)", img: "sugar.png" },
+        { name_en: "Kerosene – 3–15L based on LPG", name_ta: "மண்ணெண்ணெய் – LPG அடிப்படையில் 3–15L", img: "kerosene.png" },
+        { name_en: "Tur Dal – 1Kg", name_ta: "துவரம் பருப்பு – 1Kg", img: "dhal.png" },
+        { name_en: "Palmolein – 1L", name_ta: "பாமோலின் – 1L", img: "oil.png" }
+      ],
+      "NPHH": [
+        { name_en: "Rice – up to 20Kg per family", name_ta: "அரிசி – குடும்பத்திற்கு அதிகபட்சம் 20Kg", img: "rice.png" },
+        { name_en: "Wheat – 5Kg rural / 10Kg urban", name_ta: "கோதுமை – கிராமம் 5Kg / நகரம் 10Kg", img: "wheat.png" },
+        { name_en: "Sugar – up to 5Kg", name_ta: "சர்க்கரை – 5Kg வரை", img: "sugar.png" },
+        { name_en: "Kerosene – based on LPG", name_ta: "மண்ணெண்ணெய் – LPG அடிப்படையில்", img: "kerosene.png" }
+      ],
+      "AAY": [
+        { name_en: "Rice – 35Kg", name_ta: "அரிசி – 35Kg", img: "rice.png" },
+        { name_en: "Sugar – Rs13.50", name_ta: "சர்க்கரை – ரூ13.50", img: "sugar.png" },
+        { name_en: "Palmolein – 1L", name_ta: "பாமோலின் – 1L", img: "oil.png" }
+      ]
+    };
+
+    const translations = {
+      en: { title: "Available Products", back: "⬅ Back", next: "Next ➡" },
+      ta: { title: "கிடைக்கும் பொருட்கள்", back: "⬅ பின்", next: "அடுத்து ➡" }
+    };
+
+    let currentLang = "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("langSelect").addEventListener("change", function(){
+        currentLang = this.value;
+        showProducts();
+      });
+    });
+
+    function showProducts() {
+      const user = JSON.parse(localStorage.getItem("userData"));
+      if (!user) {
+        alert("Please login first!");
+        window.location.href = "index.html";
+        return;
+      }
+      const type = user.cardType || "NPHH";
+      const items = productData[type] || [];
+      const container = document.getElementById("cards");
+      const tr = translations[currentLang];
+
+      document.getElementById("title").textContent = tr.title;
+      document.getElementById("backBtn").textContent = tr.back;
+      document.getElementById("nextBtn").textContent = tr.next;
+
+      if (items.length === 0) {
+        container.innerHTML = "<p>No products available for this card type.</p>";
+      } else {
+        container.innerHTML = items.map(item => `
+            <div class="card">
+              <img src="images/${item.img}" alt="">
+              <p>${currentLang === "en" ? item.name_en : item.name_ta}</p>
+            </div>
+        `).join("");
+      }
+    }
+  </script>
+
+</body>
+</html>

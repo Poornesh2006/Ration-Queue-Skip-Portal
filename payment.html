@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment – TN Ration Queue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Poppins,sans-serif;margin:0;background:linear-gradient(135deg,#f97316,#fff,#22c55e);display:flex;justify-content:center;align-items:flex-start;padding:40px 0;min-height:100vh}
+    .container{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);border-radius:20px;padding:40px;width:90%;max-width:600px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .logo{width:100px;margin-bottom:15px}
+    h2{margin-bottom:15px;font-size:24px;font-weight:600;background:linear-gradient(90deg,#22c55e,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .summary{margin:20px 0;font-size:16px;color:#333;font-weight:500;text-align:left}
+    select{width:100%;padding:10px;border-radius:8px;border:1px solid #aaa;font-size:15px;background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='gray'><polygon points='0,0 24,0 12,12'/></svg>") no-repeat right 10px center;appearance:none;margin-bottom:20px}
+    .pay-img img{width:120px;display:none;background:#fff;padding:8px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .btn{padding:12px 25px;border:none;border-radius:8px;font-weight:600;font-size:15px;color:#fff;cursor:pointer;background:linear-gradient(90deg,#f97316,#22c55e);margin:5px}
+  </style>
+</head>
+<body onload="loadPayment()">
+  <div class="container">
+    <img src="images/TamilNadu_Logo.svg.png" class="logo">
+    <h2>Payment</h2>
+    <div class="summary" id="summaryBox">Subtotal: ₹0<br>GST: ₹0<br><strong>Total: ₹0</strong></div>
+
+    <label>Payment Method:</label>
+    <select id="paymentMethod" onchange="showPaymentImage()">
+      <option value="">-- Select --</option>
+      <option value="gpay">Google Pay</option>
+      <option value="phonepe">PhonePe</option>
+      <option value="paytm">Paytm</option>
+      <option value="upi">UPI</option>
+    </select>
+
+    <div class="pay-img">
+      <img src="images/gpay.png" id="img-gpay">
+      <img src="images/phonepe.png" id="img-phonepe">
+      <img src="images/paytm.png" id="img-paytm">
+      <img src="images/upi.png" id="img-upi">
+    </div>
+
+    <button class="btn" onclick="window.location.href='buy-product.html'">Back</button>
+    <button class="btn" onclick="confirmPayment()">Confirm & Proceed</button>
+  </div>
+
+<script>
+function loadPayment(){
+  const sub=parseFloat(localStorage.getItem("subtotal")||"0");
+  const gst=sub*0.05;
+  const total=sub+gst;
+  document.getElementById("summaryBox").innerHTML=
+    `Subtotal: ₹${sub.toFixed(2)}<br>GST (5%): ₹${gst.toFixed(2)}<br><strong>Total: ₹${total.toFixed(2)}</strong>`;
+  localStorage.setItem("total",total.toFixed(2));
+}
+function showPaymentImage(){
+  const val=document.getElementById("paymentMethod").value;
+  document.querySelectorAll(".pay-img img").forEach(i=>i.style.display="none");
+  if(val)document.getElementById("img-"+val).style.display="inline-block";
+}
+function confirmPayment(){
+  const method=document.getElementById("paymentMethod").value;
+  if(!method){alert("Select payment method!");return;}
+  localStorage.setItem("selectedPayment",method);
+  window.location.href="confirmation.html";
+}
+</script>
+</body>
+</html>

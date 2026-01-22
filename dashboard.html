@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TN Ration Queue – Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg,#f97316,#ffffff,#22c55e);
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      padding-top:40px;
+      min-height:100vh;
+    }
+    .box{
+      width:95%;
+      max-width:720px;
+      background:rgba(255,255,255,0.25);
+      backdrop-filter:blur(10px);
+      border-radius:20px;
+      padding:40px;
+      text-align:center;
+      box-shadow:0 8px 25px rgba(0,0,0,.25);
+      position:relative;
+    }
+    img.logo{width:100px;margin-bottom:10px;}
+    h2{
+      font-size:26px;
+      background:linear-gradient(90deg,#22c55e,#f97316);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:15px;
+    }
+    .profile{
+      background:rgba(255,255,255,.5);
+      padding:20px;
+      border-radius:12px;
+      margin-top:15px;
+      text-align:left;
+    }
+    .profile p{margin:6px 0;font-size:15px;font-weight:500;color:#333;}
+    .profile-pic{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #fff;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      display:block;
+      margin:0 auto 15px;
+    }
+    .timing{
+      margin-top:20px;
+      padding:12px;
+      background:rgba(255,255,255,.5);
+      border-radius:10px;
+      display:none;
+      text-align:center;
+    }
+    a.btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 22px;
+      background:linear-gradient(90deg,#22c55e,#f97316);
+      border-radius:10px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      transition:.2s;
+    }
+    a.btn:hover{transform:scale(1.05);}
+    .language-select {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-select select {
+      appearance: none;
+      padding: 8px 36px 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all .25s ease;
+      outline: none;
+    }
+    .language-select::after {
+      content: "▾";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000;
+      font-size: 12px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body onload="initDash()">
+
+  <div class="box">
+    <!-- Language selector -->
+    <div class="language-select">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+    </div>
+
+    <img src="images/TamilNadu_Logo.svg.png" class="logo" alt="Tamil Nadu Logo">
+    <h2 id="dashTitle">Welcome to Tamil Nadu Ration Queue Skip Portal</h2>
+
+    <img id="userPic" class="profile-pic" src="images/user1.png" alt="Profile Picture">
+
+    <div class="profile">
+      <p id="name"></p>
+      <p id="aadhaar"></p>
+      <p id="card"></p>
+      <p id="city"></p>
+      <p id="village"></p>
+      <p id="pincode"></p>
+    </div>
+
+    <div id="slotInfo" class="timing">
+      <p id="showDate"></p>
+      <p id="showTime"></p>
+      <p id="showToken"></p>
+    </div>
+
+    <a href="products.html" class="btn" id="productsBtn">View Products</a>
+    <a href="purchase-history.html" class="btn" id="historyBtn">Purchase History</a>
+  </div>
+
+  <script>
+    // --- translations ---
+    const t = {
+      en:{
+        title:"Welcome to Tamil Nadu Ration Queue Skip Portal",
+        view:"View Products",
+        history:"Purchase History",
+        date:"Selected Date",
+        time:"Allocated Time",
+        token:"Token"
+      },
+      ta:{
+        title:"தமிழ்நாடு ரேஷன் வரிசை தவிர்க்கும் போர்டலுக்கு வரவேற்கிறோம்",
+        view:"பொருட்களை பார்க்க",
+        history:"கொள்முதல் வரலாறு",
+        date:"தேர்ந்தெடுத்த தேதி",
+        time:"ஒதுக்கப்பட்ட நேரம்",
+        token:"டோக்கன்"
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded",()=>{
+      document.getElementById("langSelect").addEventListener("change",function(){
+        changeLang(this.value);
+      });
+    });
+
+    function changeLang(lang){
+      document.getElementById("dashTitle").textContent = t[lang].title;
+      document.getElementById("productsBtn").textContent = t[lang].view;
+      document.getElementById("historyBtn").textContent = t[lang].history;
+
+      const d=document.getElementById("showDate");
+      const ti=document.getElementById("showTime");
+      const tk=document.getElementById("showToken");
+
+      if(d.dataset.date){
+        d.textContent = `${t[lang].date}: ${d.dataset.date}`;
+        ti.textContent = `${t[lang].time}: ${ti.dataset.time}`;
+        tk.textContent = `${t[lang].token}: ${tk.dataset.token}`;
+      }
+    }
+
+    function initDash(){
+      const u = JSON.parse(localStorage.getItem("userData"));
+      if(u){
+        document.getElementById("name").textContent    = `Name: ${u.name}`;
+        document.getElementById("aadhaar").textContent = `Aadhaar: ${u.aadhaar}`;
+        document.getElementById("card").textContent    = `Card Type: ${u.cardType}`;
+        document.getElementById("city").textContent    = `City: ${u.city}`;
+        document.getElementById("village").textContent = `Village: ${u.village}`;
+        document.getElementById("pincode").textContent = `Pincode: ${u.pincode}`;
+        document.getElementById("userPic").src         = u.profilePic || "images/user1.png";
+      }
+
+      // fetch latest booking from purchaseHistory
+      const history = JSON.parse(localStorage.getItem("purchaseHistory")) || [];
+      if(history.length){
+        const last = history[history.length-1];
+        document.getElementById("slotInfo").style.display="block";
+
+        const dEl = document.getElementById("showDate");
+        const tEl = document.getElementById("showTime");
+        const tkEl= document.getElementById("showToken");
+
+        dEl.textContent = `Selected Date: ${last.date}`;
+        tEl.textContent = `Allocated Time: ${last.slot}`;
+        tkEl.textContent= `Token: ${last.token}`;
+
+        // store raw values for language toggle
+        dEl.dataset.date = last.date;
+        tEl.dataset.time = last.slot;
+        tkEl.dataset.token = last.token;
+      }
+    }
+  </script>
+</body>
+</html>

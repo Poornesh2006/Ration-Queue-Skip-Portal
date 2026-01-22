@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Products – TN Ration Queue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #22c55e, #ffffff, #f97316);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 95%;
+      max-width: 800px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+      position: relative;
+    }
+    .logo {
+      width: 110px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #22c55e, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
+    }
+    th { background: rgba(255,255,255,0.3); }
+    input[type="number"] {
+      width: 70px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #bbb;
+      text-align: center;
+    }
+    .prod-img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      background: linear-gradient(90deg, #f97316, #22c55e);
+      transition: transform 0.2s;
+      margin: 5px;
+    }
+    .btn:hover { transform: scale(1.05); }
+    .subtotal {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: right;
+      margin-top: 15px;
+      color: #333;
+    }
+    /* Language selector */
+    .language-select {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-select select {
+      appearance: none;
+      padding: 8px 36px 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all .25s ease;
+      outline: none;
+    }
+    .language-select::after {
+      content: "▾";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000;
+      font-size: 12px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Language dropdown -->
+    <div class="language-select">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+    </div>
+
+    <img src="images/TamilNadu_Logo.svg.png" alt="TN Logo" class="logo">
+    <h2 id="title">Select Products to Buy</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th id="thImg">Image</th>
+          <th id="thProd">Product</th>
+          <th id="thPrice">Price (₹)</th>
+          <th id="thQty">Qty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/rice.png" alt="Rice" class="prod-img"></td>
+          <td id="lblRice">Rice (per Kg)</td>
+          <td>₹30</td>
+          <td><input type="number" id="riceQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+          <td><img src="images/sugar.png" alt="Sugar" class="prod-img"></td>
+          <td id="lblSugar">Sugar (per Kg)</td>
+          <td>₹25</td>
+          <!-- FIX: allow half kg -->
+          <td><input type="number" id="sugarQty" value="0" min="0" step="0.5"></td>
+        </tr>
+        <tr>
+          <td><img src="images/wheat.png" alt="Wheat" class="prod-img"></td>
+          <td id="lblWheat">Wheat (per Kg)</td>
+          <td>₹20</td>
+          <td><input type="number" id="wheatQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+          <td><img src="images/oil.png" alt="Palm Oil" class="prod-img"></td>
+          <td id="lblOil">Palmolein Oil (per L)</td>
+          <td>₹50</td>
+          <td><input type="number" id="oilQty" value="0" min="0"></td>
+        </tr>
+        <tr>
+          <td>🚫</td>
+          <td id="lblNil" style="font-weight:600;">Nil (No Paid Items)</td>
+          <td>-</td>
+          <td><input type="checkbox" id="nilOption"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="subtotalBox" class="subtotal">Subtotal: ₹0</div>
+
+    <button class="btn" id="backBtn" onclick="goBack()">Back</button>
+    <button class="btn" id="contBtn" onclick="proceed()">Continue</button>
+  </div>
+
+  <script>
+    const priceList = { rice: 30, sugar: 25, wheat: 20, oil: 50 };
+
+    // -------------------- LIMITS BASED ON CARD ---------------------
+    function getMaxQty(product) {
+      const card = localStorage.getItem("cardType") || "NPHH";
+      const units = parseInt(localStorage.getItem("familySize") || "1");
+      const area = localStorage.getItem("area") || "Urban";
+
+      switch(product) {
+        case "rice":
+          if (card === "AAY") return 35;
+          if (card === "OAP") return 4;
+          if (card === "ANP") return 10;
+          if (card === "PHH") return 20 + Math.max(0, units - 4) * 5;
+          return Math.min(20, units === 1 ? 12 :
+                               units === 2 ? 16 :
+                               units === 3 ? 20 : 20);
+        case "wheat":
+          return area === "Urban" ? 10 : 5;
+        case "sugar":
+          if (card === "AAY") return 5;
+          return Math.min(2, 0.5 * units);
+        case "oil":
+          return 1;
+        default:
+          return 0;
+      }
+    }
+
+    function validateQty(inputId, product) {
+      const max = getMaxQty(product);
+      const el = document.getElementById(inputId);
+      let val = parseFloat(el.value || 0); // FIX: float for half kg
+      if (val > max) {
+        alert(`Maximum allowed for ${product} is ${max}`);
+        el.value = max;
+        val = max;
+      }
+      if (val < 0 || isNaN(val)) el.value = 0;
+      updateSubtotal();
+    }
+
+    // ------------------- SUBTOTAL -----------------------
+    function updateSubtotal() {
+      const nil = document.getElementById('nilOption').checked;
+      if (nil) {
+        document.getElementById('subtotalBox').innerText =
+          texts[currentLang].subtotal + "₹0";
+        return;
+      }
+      const rice  = parseInt(document.getElementById('riceQty').value || 0);
+      const sugar = parseFloat(document.getElementById('sugarQty').value || 0); // FIX: float
+      const wheat = parseInt(document.getElementById('wheatQty').value || 0);
+      const oil   = parseInt(document.getElementById('oilQty').value || 0);
+
+      const subtotal =
+        rice * priceList.rice +
+        sugar * priceList.sugar +
+        wheat * priceList.wheat +
+        oil * priceList.oil;
+
+      document.getElementById('subtotalBox').innerText =
+        texts[currentLang].subtotal + "₹" + subtotal.toFixed(2);
+    }
+
+    function goBack() { window.location.href = "products.html"; }
+
+    function proceed() {
+      const nilChecked = document.getElementById('nilOption').checked;
+      if (nilChecked) {
+        localStorage.setItem("subtotal", "0");
+        localStorage.setItem("cartItems", JSON.stringify([]));
+        window.location.href = "confirmation.html";
+        return;
+      }
+
+      const rice  = parseInt(document.getElementById('riceQty').value || 0);
+      const sugar = parseFloat(document.getElementById('sugarQty').value || 0); // FIX: float
+      const wheat = parseInt(document.getElementById('wheatQty').value || 0);
+      const oil   = parseInt(document.getElementById('oilQty').value || 0);
+
+      const subtotal =
+        rice * priceList.rice +
+        sugar * priceList.sugar +
+        wheat * priceList.wheat +
+        oil * priceList.oil;
+
+      const cart = [
+        { name: "Rice", qty: rice, price: priceList.rice, img: "images/rice.png" },
+        { name: "Sugar", qty: sugar, price: priceList.sugar, img: "images/sugar.png" },
+        { name: "Wheat", qty: wheat, price: priceList.wheat, img: "images/wheat.png" },
+        { name: "Palmolein Oil", qty: oil, price: priceList.oil, img: "images/oil.png" }
+      ].filter(item => item.qty > 0);
+
+      localStorage.setItem("subtotal", subtotal.toFixed(2));
+      localStorage.setItem("cartItems", JSON.stringify(cart));
+
+      if (subtotal <= 0) window.location.href = "confirmation.html";
+      else window.location.href = "payment.html";
+    }
+
+    // ---------- Translations ----------
+    const texts = {
+      en: {
+        title: "Select Products to Buy",
+        thImg: "Image", thProd: "Product", thPrice: "Price (₹)", thQty: "Qty",
+        rice: "Rice (per Kg)", sugar: "Sugar (per Kg)",
+        wheat: "Wheat (per Kg)", oil: "Palmolein Oil (per L)",
+        nil: "Nil (No Paid Items)",
+        back: "Back", cont: "Continue", subtotal: "Subtotal: "
+      },
+      ta: {
+        title: "வாங்க பொருட்களை தேர்வுசெய்க",
+        thImg: "படம்", thProd: "பொருள்", thPrice: "விலை (₹)", thQty: "அளவு",
+        rice: "அரிசி (கிலோக்கு)", sugar: "சர்க்கரை (கிலோக்கு)",
+        wheat: "கோதுமை (கிலோக்கு)", oil: "பாமோலின் எண்ணெய் (லிட்டருக்கு)",
+        nil: "பொருட்கள் இல்லை",
+        back: "பின்", cont: "தொடர்க", subtotal: "மொத்தம்: "
+      }
+    };
+    let currentLang = "en";
+
+    function applyLang() {
+      const t = texts[currentLang];
+      document.getElementById("title").innerText = t.title;
+      document.getElementById("thImg").innerText = t.thImg;
+      document.getElementById("thProd").innerText = t.thProd;
+      document.getElementById("thPrice").innerText = t.thPrice;
+      document.getElementById("thQty").innerText = t.thQty;
+      document.getElementById("lblRice").innerText = t.rice;
+      document.getElementById("lblSugar").innerText = t.sugar;
+      document.getElementById("lblWheat").innerText = t.wheat;
+      document.getElementById("lblOil").innerText = t.oil;
+      document.getElementById("lblNil").innerText = t.nil;
+      document.getElementById("backBtn").innerText = t.back;
+      document.getElementById("contBtn").innerText = t.cont;
+      updateSubtotal();
+    }
+
+    document.getElementById("langSelect").addEventListener("change", e=>{
+      currentLang = e.target.value;
+      applyLang();
+    });
+
+    // Attach qty events
+    document.getElementById("riceQty").addEventListener("input", () => validateQty("riceQty","rice"));
+    document.getElementById("sugarQty").addEventListener("input", () => validateQty("sugarQty","sugar"));
+    document.getElementById("wheatQty").addEventListener("input", () => validateQty("wheatQty","wheat"));
+    document.getElementById("oilQty").addEventListener("input", () => validateQty("oilQty","oil"));
+    document.getElementById("nilOption").addEventListener("change", updateSubtotal);
+
+    // Init
+    applyLang();
+  </script>
+
+</body>
+</html>
