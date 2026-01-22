@@ -1,0 +1,26 @@
+[
+  {
+    "aadhaar": "234567891234",
+    "name": "M K Stalin",
+    "city": "Chennai",
+    "village": "Anna Nagar",
+    "cardType": "PHH",
+    "photo": "images/user1.png"
+  },
+  {
+    "aadhaar": "345678912345",
+    "name": "Meena Devi",
+    "city": "Madurai",
+    "village": "Thiruparankundram",
+    "cardType": "AAY",
+    "photo": "images/user2.jpg"
+  },
+  {
+    "aadhaar": "8765437686462",
+    "name": "Nithishkumar K C",
+    "city": "Erode",
+    "village": "Kangayam",
+    "cardType": "AAY",
+    "photo": "images/user3.jpg"
+  }
+]
