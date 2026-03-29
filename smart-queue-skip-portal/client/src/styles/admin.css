@@ -1,0 +1,19 @@
+/* Admin workspace styling extracted into its own file. */
+
+.topbar,
+.sidebar,
+.admin-page-shell,
+.table-shell,
+.filter-bar {
+  width: 100%;
+}
+
+.admin-table tbody tr,
+.nav-list a,
+.table-actions .ui-button {
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+  transform: translateY(-1px);
+}

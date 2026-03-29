@@ -1,0 +1,23 @@
+/* Booking page component styles extracted for maintainability. */
+
+.booking-shell,
+.booking-header,
+.booking-badge,
+.booking-summary,
+.date-grid,
+.slot-grid,
+.product-grid {
+  width: 100%;
+}
+
+.product-card,
+.date-card,
+.slot-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.product-card:hover,
+.date-card:hover,
+.slot-card:hover:not(:disabled) {
+  transform: translateY(-3px);
+}

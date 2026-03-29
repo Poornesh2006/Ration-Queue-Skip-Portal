@@ -1,0 +1,62 @@
+const baseCatalog = [
+  {
+    id: "rice",
+    name: "Rice",
+    description: "Core household allocation under Tamil Nadu PDS",
+    type: "free",
+    price: 0,
+    unit: "kg",
+    image: "/images/products/rice.png",
+  },
+  {
+    id: "sugar",
+    name: "Sugar",
+    description: "Household sugar allocation",
+    type: "free",
+    price: 0,
+    unit: "kg",
+    image: "/images/products/sugar.png",
+  },
+  {
+    id: "wheat",
+    name: "Wheat",
+    description: "Optional grain issued on payment",
+    type: "paid",
+    price: 3,
+    unit: "kg",
+    image: "/images/products/wheat.png",
+  },
+  {
+    id: "dhal",
+    name: "Tur Dal",
+    description: "Paid pulse allocation per card",
+    type: "paid",
+    price: 32,
+    unit: "kg",
+    image: "/images/products/dhal.png",
+  },
+  {
+    id: "oil",
+    name: "Palmolein Oil",
+    description: "Paid edible oil allocation",
+    type: "paid",
+    price: 28,
+    unit: "litre",
+    image: "/images/products/oil.png",
+  },
+  {
+    id: "salt",
+    name: "Iodised Salt",
+    description: "Paid salt pack",
+    type: "paid",
+    price: 6,
+    unit: "kg",
+    image: "/images/products/sugar.png",
+  },
+];
+
+export const productCatalog = {
+  PHH: baseCatalog,
+  NPHH: baseCatalog,
+  AAY: baseCatalog,
+};

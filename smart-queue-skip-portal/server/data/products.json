@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Rice",
+    "sku": "PDS-RICE-001",
+    "category": "rice",
+    "type": "free",
+    "unit": "kg",
+    "price": 0,
+    "stockAvailable": 5000,
+    "reorderLevel": 500,
+    "notes": "Core free rice allocation under TN PDS"
+  },
+  {
+    "name": "Sugar",
+    "sku": "PDS-SUGAR-001",
+    "category": "sugar",
+    "type": "free",
+    "unit": "kg",
+    "price": 0,
+    "stockAvailable": 1400,
+    "reorderLevel": 180,
+    "notes": "Subsidized household sugar"
+  },
+  {
+    "name": "Wheat",
+    "sku": "PDS-WHEAT-001",
+    "category": "wheat",
+    "type": "paid",
+    "unit": "kg",
+    "price": 3,
+    "stockAvailable": 1800,
+    "reorderLevel": 200,
+    "notes": "Paid supplementary grain"
+  },
+  {
+    "name": "Tur Dal",
+    "sku": "PDS-DAL-001",
+    "category": "dal",
+    "type": "paid",
+    "unit": "kg",
+    "price": 32,
+    "stockAvailable": 900,
+    "reorderLevel": 100,
+    "notes": "Pulse allocation"
+  },
+  {
+    "name": "Palmolein Oil",
+    "sku": "PDS-OIL-001",
+    "category": "oil",
+    "type": "paid",
+    "unit": "litre",
+    "price": 28,
+    "stockAvailable": 850,
+    "reorderLevel": 90,
+    "notes": "Edible oil allocation"
+  },
+  {
+    "name": "Salt",
+    "sku": "PDS-SALT-001",
+    "category": "salt",
+    "type": "paid",
+    "unit": "kg",
+    "price": 6,
+    "stockAvailable": 700,
+    "reorderLevel": 80,
+    "notes": "Iodised salt allocation"
+  }
+]

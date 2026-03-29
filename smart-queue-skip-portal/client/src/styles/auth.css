@@ -1,0 +1,25 @@
+/* Auth page styling extracted from the shared theme surface. */
+
+.auth-card h2,
+.auth-card h3,
+.citizen-auth-card h1,
+.citizen-auth-card h2,
+.admin-auth-page h1,
+.admin-auth-page h2 {
+  text-wrap: balance;
+}
+
+.citizen-auth-page,
+.admin-auth-page {
+  min-height: 100vh;
+}
+
+.auth-helper-line,
+.story-copy,
+.compact-copy {
+  max-width: 400px;
+}
+
+.auth-utility-bar {
+  align-items: center;
+}

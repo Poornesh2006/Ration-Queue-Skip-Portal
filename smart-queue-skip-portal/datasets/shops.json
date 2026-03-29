@@ -1,0 +1,302 @@
+[
+  {
+    "shop_id": "SHOP-001",
+    "shop_name": "Chennai Fair Price Shop 1",
+    "location": "Chennai",
+    "dealer_name": "Mohan Ravi",
+    "stock": {
+      "rice": 471,
+      "wheat": 246,
+      "sugar": 217,
+      "kerosene": 173
+    }
+  },
+  {
+    "shop_id": "SHOP-002",
+    "shop_name": "Madurai Fair Price Shop 2",
+    "location": "Madurai",
+    "dealer_name": "Kamal Prakash",
+    "stock": {
+      "rice": 754,
+      "wheat": 266,
+      "sugar": 314,
+      "kerosene": 187
+    }
+  },
+  {
+    "shop_id": "SHOP-003",
+    "shop_name": "Coimbatore Fair Price Shop 3",
+    "location": "Coimbatore",
+    "dealer_name": "Kishore Velu",
+    "stock": {
+      "rice": 678,
+      "wheat": 393,
+      "sugar": 140,
+      "kerosene": 210
+    }
+  },
+  {
+    "shop_id": "SHOP-004",
+    "shop_name": "Erode Fair Price Shop 4",
+    "location": "Erode",
+    "dealer_name": "Karthik Muthu",
+    "stock": {
+      "rice": 473,
+      "wheat": 269,
+      "sugar": 177,
+      "kerosene": 107
+    }
+  },
+  {
+    "shop_id": "SHOP-005",
+    "shop_name": "Salem Fair Price Shop 5",
+    "location": "Salem",
+    "dealer_name": "Mahalakshmi Selvi",
+    "stock": {
+      "rice": 451,
+      "wheat": 243,
+      "sugar": 171,
+      "kerosene": 95
+    }
+  },
+  {
+    "shop_id": "SHOP-006",
+    "shop_name": "Tiruchirappalli Fair Price Shop 6",
+    "location": "Tiruchirappalli",
+    "dealer_name": "Keerthana Lakshmanan",
+    "stock": {
+      "rice": 664,
+      "wheat": 212,
+      "sugar": 241,
+      "kerosene": 119
+    }
+  },
+  {
+    "shop_id": "SHOP-007",
+    "shop_name": "Thoothukudi Fair Price Shop 7",
+    "location": "Thoothukudi",
+    "dealer_name": "Priya Babu",
+    "stock": {
+      "rice": 896,
+      "wheat": 359,
+      "sugar": 185,
+      "kerosene": 184
+    }
+  },
+  {
+    "shop_id": "SHOP-008",
+    "shop_name": "Tirunelveli Fair Price Shop 8",
+    "location": "Tirunelveli",
+    "dealer_name": "Sathish Subramanian",
+    "stock": {
+      "rice": 537,
+      "wheat": 379,
+      "sugar": 161,
+      "kerosene": 169
+    }
+  },
+  {
+    "shop_id": "SHOP-009",
+    "shop_name": "Vellore Fair Price Shop 9",
+    "location": "Vellore",
+    "dealer_name": "Ramesh Rangan",
+    "stock": {
+      "rice": 446,
+      "wheat": 417,
+      "sugar": 199,
+      "kerosene": 237
+    }
+  },
+  {
+    "shop_id": "SHOP-010",
+    "shop_name": "Cuddalore Fair Price Shop 10",
+    "location": "Cuddalore",
+    "dealer_name": "Yazhini Narayanan",
+    "stock": {
+      "rice": 826,
+      "wheat": 363,
+      "sugar": 170,
+      "kerosene": 109
+    }
+  },
+  {
+    "shop_id": "SHOP-011",
+    "shop_name": "Thanjavur Fair Price Shop 11",
+    "location": "Thanjavur",
+    "dealer_name": "Lakshmi Anand",
+    "stock": {
+      "rice": 524,
+      "wheat": 358,
+      "sugar": 317,
+      "kerosene": 167
+    }
+  },
+  {
+    "shop_id": "SHOP-012",
+    "shop_name": "Namakkal Fair Price Shop 12",
+    "location": "Namakkal",
+    "dealer_name": "Yazhini Subramanian",
+    "stock": {
+      "rice": 543,
+      "wheat": 383,
+      "sugar": 264,
+      "kerosene": 100
+    }
+  },
+  {
+    "shop_id": "SHOP-013",
+    "shop_name": "Virudhunagar Fair Price Shop 13",
+    "location": "Virudhunagar",
+    "dealer_name": "Senthil Muthu",
+    "stock": {
+      "rice": 858,
+      "wheat": 349,
+      "sugar": 214,
+      "kerosene": 107
+    }
+  },
+  {
+    "shop_id": "SHOP-014",
+    "shop_name": "Kancheepuram Fair Price Shop 14",
+    "location": "Kancheepuram",
+    "dealer_name": "Revathi Balan",
+    "stock": {
+      "rice": 432,
+      "wheat": 397,
+      "sugar": 227,
+      "kerosene": 215
+    }
+  },
+  {
+    "shop_id": "SHOP-015",
+    "shop_name": "Dindigul Fair Price Shop 15",
+    "location": "Dindigul",
+    "dealer_name": "Ramesh Velu",
+    "stock": {
+      "rice": 790,
+      "wheat": 342,
+      "sugar": 237,
+      "kerosene": 129
+    }
+  },
+  {
+    "shop_id": "SHOP-016",
+    "shop_name": "Krishnagiri Fair Price Shop 16",
+    "location": "Krishnagiri",
+    "dealer_name": "Shankar Ravi",
+    "stock": {
+      "rice": 696,
+      "wheat": 337,
+      "sugar": 257,
+      "kerosene": 213
+    }
+  },
+  {
+    "shop_id": "SHOP-017",
+    "shop_name": "Nagapattinam Fair Price Shop 17",
+    "location": "Nagapattinam",
+    "dealer_name": "Mohan Velu",
+    "stock": {
+      "rice": 694,
+      "wheat": 262,
+      "sugar": 182,
+      "kerosene": 112
+    }
+  },
+  {
+    "shop_id": "SHOP-018",
+    "shop_name": "Villupuram Fair Price Shop 18",
+    "location": "Villupuram",
+    "dealer_name": "Kishore Prakash",
+    "stock": {
+      "rice": 669,
+      "wheat": 372,
+      "sugar": 238,
+      "kerosene": 235
+    }
+  },
+  {
+    "shop_id": "SHOP-019",
+    "shop_name": "Karur Fair Price Shop 19",
+    "location": "Karur",
+    "dealer_name": "Keerthana Narayanan",
+    "stock": {
+      "rice": 764,
+      "wheat": 187,
+      "sugar": 246,
+      "kerosene": 173
+    }
+  },
+  {
+    "shop_id": "SHOP-020",
+    "shop_name": "Ramanathapuram Fair Price Shop 20",
+    "location": "Ramanathapuram",
+    "dealer_name": "Bharath Kani",
+    "stock": {
+      "rice": 637,
+      "wheat": 270,
+      "sugar": 186,
+      "kerosene": 177
+    }
+  },
+  {
+    "shop_id": "SHOP-021",
+    "shop_name": "Nilgiris Fair Price Shop 21",
+    "location": "Nilgiris",
+    "dealer_name": "Kishore Subramanian",
+    "stock": {
+      "rice": 702,
+      "wheat": 322,
+      "sugar": 122,
+      "kerosene": 222
+    }
+  },
+  {
+    "shop_id": "SHOP-022",
+    "shop_name": "Tenkasi Fair Price Shop 22",
+    "location": "Tenkasi",
+    "dealer_name": "Saravanan Devi",
+    "stock": {
+      "rice": 667,
+      "wheat": 364,
+      "sugar": 224,
+      "kerosene": 215
+    }
+  },
+  {
+    "shop_id": "SHOP-023",
+    "shop_name": "Theni Fair Price Shop 23",
+    "location": "Theni",
+    "dealer_name": "Nandhini Anand",
+    "stock": {
+      "rice": 907,
+      "wheat": 345,
+      "sugar": 302,
+      "kerosene": 215
+    }
+  },
+  {
+    "shop_id": "SHOP-024",
+    "shop_name": "Tiruppur Fair Price Shop 24",
+    "location": "Tiruppur",
+    "dealer_name": "Pravin Kumar",
+    "stock": {
+      "rice": 515,
+      "wheat": 255,
+      "sugar": 176,
+      "kerosene": 193
+    }
+  },
+  {
+    "shop_id": "SHOP-025",
+    "shop_name": "Pudukkottai Fair Price Shop 25",
+    "location": "Pudukkottai",
+    "dealer_name": "Deepa Anand",
+    "stock": {
+      "rice": 733,
+      "wheat": 349,
+      "sugar": 268,
+      "kerosene": 184
+    }
+  }
+]

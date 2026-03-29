@@ -1,0 +1,282 @@
+[
+  {
+    "slot_id": "SLT001",
+    "slot_time": "08:00 AM - 09:00 AM",
+    "max_limit": 20,
+    "booked_count": 19,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT002",
+    "slot_time": "09:00 AM - 10:00 AM",
+    "max_limit": 20,
+    "booked_count": 20,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT003",
+    "slot_time": "10:00 AM - 11:00 AM",
+    "max_limit": 20,
+    "booked_count": 15,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT004",
+    "slot_time": "11:00 AM - 12:00 PM",
+    "max_limit": 20,
+    "booked_count": 17,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT005",
+    "slot_time": "12:00 PM - 01:00 PM",
+    "max_limit": 20,
+    "booked_count": 14,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT006",
+    "slot_time": "01:00 PM - 02:00 PM",
+    "max_limit": 20,
+    "booked_count": 15,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT007",
+    "slot_time": "02:00 PM - 03:00 PM",
+    "max_limit": 20,
+    "booked_count": 18,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT008",
+    "slot_time": "03:00 PM - 04:00 PM",
+    "max_limit": 20,
+    "booked_count": 12,
+    "date": "2026-04-01"
+  },
+  {
+    "slot_id": "SLT009",
+    "slot_time": "08:00 AM - 09:00 AM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT010",
+    "slot_time": "09:00 AM - 10:00 AM",
+    "max_limit": 20,
+    "booked_count": 12,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT011",
+    "slot_time": "10:00 AM - 11:00 AM",
+    "max_limit": 20,
+    "booked_count": 11,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT012",
+    "slot_time": "11:00 AM - 12:00 PM",
+    "max_limit": 20,
+    "booked_count": 7,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT013",
+    "slot_time": "12:00 PM - 01:00 PM",
+    "max_limit": 20,
+    "booked_count": 10,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT014",
+    "slot_time": "01:00 PM - 02:00 PM",
+    "max_limit": 20,
+    "booked_count": 14,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT015",
+    "slot_time": "02:00 PM - 03:00 PM",
+    "max_limit": 20,
+    "booked_count": 7,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT016",
+    "slot_time": "03:00 PM - 04:00 PM",
+    "max_limit": 20,
+    "booked_count": 9,
+    "date": "2026-04-02"
+  },
+  {
+    "slot_id": "SLT017",
+    "slot_time": "08:00 AM - 09:00 AM",
+    "max_limit": 20,
+    "booked_count": 10,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT018",
+    "slot_time": "09:00 AM - 10:00 AM",
+    "max_limit": 20,
+    "booked_count": 10,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT019",
+    "slot_time": "10:00 AM - 11:00 AM",
+    "max_limit": 20,
+    "booked_count": 19,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT020",
+    "slot_time": "11:00 AM - 12:00 PM",
+    "max_limit": 20,
+    "booked_count": 12,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT021",
+    "slot_time": "12:00 PM - 01:00 PM",
+    "max_limit": 20,
+    "booked_count": 20,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT022",
+    "slot_time": "01:00 PM - 02:00 PM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT023",
+    "slot_time": "02:00 PM - 03:00 PM",
+    "max_limit": 20,
+    "booked_count": 7,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT024",
+    "slot_time": "03:00 PM - 04:00 PM",
+    "max_limit": 20,
+    "booked_count": 10,
+    "date": "2026-04-03"
+  },
+  {
+    "slot_id": "SLT025",
+    "slot_time": "08:00 AM - 09:00 AM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT026",
+    "slot_time": "09:00 AM - 10:00 AM",
+    "max_limit": 20,
+    "booked_count": 11,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT027",
+    "slot_time": "10:00 AM - 11:00 AM",
+    "max_limit": 20,
+    "booked_count": 15,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT028",
+    "slot_time": "11:00 AM - 12:00 PM",
+    "max_limit": 20,
+    "booked_count": 9,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT029",
+    "slot_time": "12:00 PM - 01:00 PM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT030",
+    "slot_time": "01:00 PM - 02:00 PM",
+    "max_limit": 20,
+    "booked_count": 4,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT031",
+    "slot_time": "02:00 PM - 03:00 PM",
+    "max_limit": 20,
+    "booked_count": 8,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT032",
+    "slot_time": "03:00 PM - 04:00 PM",
+    "max_limit": 20,
+    "booked_count": 12,
+    "date": "2026-04-04"
+  },
+  {
+    "slot_id": "SLT033",
+    "slot_time": "08:00 AM - 09:00 AM",
+    "max_limit": 20,
+    "booked_count": 5,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT034",
+    "slot_time": "09:00 AM - 10:00 AM",
+    "max_limit": 20,
+    "booked_count": 5,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT035",
+    "slot_time": "10:00 AM - 11:00 AM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT036",
+    "slot_time": "11:00 AM - 12:00 PM",
+    "max_limit": 20,
+    "booked_count": 8,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT037",
+    "slot_time": "12:00 PM - 01:00 PM",
+    "max_limit": 20,
+    "booked_count": 19,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT038",
+    "slot_time": "01:00 PM - 02:00 PM",
+    "max_limit": 20,
+    "booked_count": 7,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT039",
+    "slot_time": "02:00 PM - 03:00 PM",
+    "max_limit": 20,
+    "booked_count": 4,
+    "date": "2026-04-05"
+  },
+  {
+    "slot_id": "SLT040",
+    "slot_time": "03:00 PM - 04:00 PM",
+    "max_limit": 20,
+    "booked_count": 13,
+    "date": "2026-04-05"
+  }
+]

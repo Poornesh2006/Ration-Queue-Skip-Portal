@@ -1,0 +1,18 @@
+/* Dashboard-specific layout and chart polish. */
+
+.dashboard-hero,
+.dashboard-card-grid,
+.dashboard-chart-grid,
+.dashboard-feature-grid {
+  width: 100%;
+}
+
+.dashboard-stat-card,
+.chart-shell {
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.dashboard-stat-card:hover,
+.chart-shell:hover {
+  transform: translateY(-4px);
+}

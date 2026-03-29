@@ -1,0 +1,4126 @@
+[
+  {
+    "transaction_id": "TXN0001",
+    "user_id": "USR1061",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-29T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0002",
+    "user_id": "USR1111",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-08T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0003",
+    "user_id": "USR1020",
+    "shop_id": "SHOP-019",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-20T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0004",
+    "user_id": "USR1078",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-09T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0005",
+    "user_id": "USR1073",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-04T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0006",
+    "user_id": "USR1031",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0007",
+    "user_id": "USR1058",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-08T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0008",
+    "user_id": "USR1090",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-05T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0009",
+    "user_id": "USR1055",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-04T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0010",
+    "user_id": "USR1102",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-08T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0011",
+    "user_id": "USR1090",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-18T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0012",
+    "user_id": "USR1078",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-02T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0013",
+    "user_id": "USR1074",
+    "shop_id": "SHOP-002",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-12T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0014",
+    "user_id": "USR1061",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-27T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0015",
+    "user_id": "USR1089",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-19T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0016",
+    "user_id": "USR1033",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-08T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0017",
+    "user_id": "USR1080",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-01T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0018",
+    "user_id": "USR1119",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-29T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0019",
+    "user_id": "USR1091",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-20T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0020",
+    "user_id": "USR1029",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 14
+      }
+    ],
+    "date": "2026-03-30T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0021",
+    "user_id": "USR1050",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-08T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0022",
+    "user_id": "USR1106",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-19T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0023",
+    "user_id": "USR1071",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-04T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0024",
+    "user_id": "USR1030",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-27T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0025",
+    "user_id": "USR1064",
+    "shop_id": "SHOP-002",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-09T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0026",
+    "user_id": "USR1093",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-27T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0027",
+    "user_id": "USR1101",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-22T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0028",
+    "user_id": "USR1112",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-03T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0029",
+    "user_id": "USR1030",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-06T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0030",
+    "user_id": "USR1022",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-20T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0031",
+    "user_id": "USR1038",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-24T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0032",
+    "user_id": "USR1073",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-12T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0033",
+    "user_id": "USR1080",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-16T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0034",
+    "user_id": "USR1086",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-30T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0035",
+    "user_id": "USR1089",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-30T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0036",
+    "user_id": "USR1014",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-25T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0037",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-06T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0038",
+    "user_id": "USR1080",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-13T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0039",
+    "user_id": "USR1075",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-09T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0040",
+    "user_id": "USR1017",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-24T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0041",
+    "user_id": "USR1103",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-30T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0042",
+    "user_id": "USR1109",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-24T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0043",
+    "user_id": "USR1048",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-13T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0044",
+    "user_id": "USR1080",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-21T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0045",
+    "user_id": "USR1117",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-20T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0046",
+    "user_id": "USR1039",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-08T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0047",
+    "user_id": "USR1059",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-12T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0048",
+    "user_id": "USR1079",
+    "shop_id": "SHOP-014",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-18T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0049",
+    "user_id": "USR1013",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-24T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0050",
+    "user_id": "USR1109",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-06T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0051",
+    "user_id": "USR1101",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-16T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0052",
+    "user_id": "USR1100",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-08T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0053",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-02T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0054",
+    "user_id": "USR1003",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-17T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0055",
+    "user_id": "USR1096",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-31T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0056",
+    "user_id": "USR1094",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-03T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0057",
+    "user_id": "USR1055",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-07T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0058",
+    "user_id": "USR1017",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-09T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0059",
+    "user_id": "USR1102",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-08T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0060",
+    "user_id": "USR1106",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-26T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0061",
+    "user_id": "USR1020",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-31T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0062",
+    "user_id": "USR1056",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-24T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0063",
+    "user_id": "USR1112",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-04T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0064",
+    "user_id": "USR1029",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-23T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0065",
+    "user_id": "USR1085",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-18T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0066",
+    "user_id": "USR1118",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-23T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0067",
+    "user_id": "USR1009",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-10T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0068",
+    "user_id": "USR1054",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-22T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0069",
+    "user_id": "USR1020",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-09T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0070",
+    "user_id": "USR1054",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-14T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0071",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 22
+      },
+      {
+        "item": "rice",
+        "quantity": 16
+      },
+      {
+        "item": "wheat",
+        "quantity": 13
+      }
+    ],
+    "date": "2026-04-13T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0072",
+    "user_id": "USR1001",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-28T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0073",
+    "user_id": "USR1065",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-12T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0074",
+    "user_id": "USR1056",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-30T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0075",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 13
+      }
+    ],
+    "date": "2026-03-02T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0076",
+    "user_id": "USR1032",
+    "shop_id": "SHOP-014",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 15
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-07T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0077",
+    "user_id": "USR1025",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-23T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0078",
+    "user_id": "USR1023",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-10T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0079",
+    "user_id": "USR1060",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-06T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0080",
+    "user_id": "USR1009",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-29T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0081",
+    "user_id": "USR1040",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-29T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0082",
+    "user_id": "USR1010",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-06T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0083",
+    "user_id": "USR1078",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-02T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0084",
+    "user_id": "USR1104",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-15T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0085",
+    "user_id": "USR1047",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-19T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0086",
+    "user_id": "USR1043",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-05T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0087",
+    "user_id": "USR1011",
+    "shop_id": "SHOP-019",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-12T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0088",
+    "user_id": "USR1040",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-25T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0089",
+    "user_id": "USR1003",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-20T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0090",
+    "user_id": "USR1025",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-09T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0091",
+    "user_id": "USR1065",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-04T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0092",
+    "user_id": "USR1077",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-10T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0093",
+    "user_id": "USR1006",
+    "shop_id": "SHOP-014",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-24T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0094",
+    "user_id": "USR1040",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-13T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0095",
+    "user_id": "USR1105",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-08T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0096",
+    "user_id": "USR1092",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-08T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0097",
+    "user_id": "USR1058",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-10T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0098",
+    "user_id": "USR1114",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-02T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0099",
+    "user_id": "USR1031",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-06T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0100",
+    "user_id": "USR1120",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-15T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0101",
+    "user_id": "USR1118",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-14T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0102",
+    "user_id": "USR1028",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-05T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0103",
+    "user_id": "USR1007",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-27T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0104",
+    "user_id": "USR1092",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-19T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0105",
+    "user_id": "USR1074",
+    "shop_id": "SHOP-014",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-12T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0106",
+    "user_id": "USR1006",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-25T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0107",
+    "user_id": "USR1031",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-12T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0108",
+    "user_id": "USR1006",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-04T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0109",
+    "user_id": "USR1092",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-30T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0110",
+    "user_id": "USR1041",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-02T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0111",
+    "user_id": "USR1111",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-04T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0112",
+    "user_id": "USR1114",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-29T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0113",
+    "user_id": "USR1119",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-18T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0114",
+    "user_id": "USR1014",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-21T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0115",
+    "user_id": "USR1089",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-23T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0116",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 24
+      },
+      {
+        "item": "rice",
+        "quantity": 21
+      }
+    ],
+    "date": "2026-03-04T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0117",
+    "user_id": "USR1047",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-06T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0118",
+    "user_id": "USR1074",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-03T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0119",
+    "user_id": "USR1004",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 18
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 14
+      }
+    ],
+    "date": "2026-03-12T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0120",
+    "user_id": "USR1110",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-29T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0121",
+    "user_id": "USR1115",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-11T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0122",
+    "user_id": "USR1016",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-09T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0123",
+    "user_id": "USR1103",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-09T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0124",
+    "user_id": "USR1051",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-31T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0125",
+    "user_id": "USR1083",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-29T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0126",
+    "user_id": "USR1107",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-03T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0127",
+    "user_id": "USR1045",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-19T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0128",
+    "user_id": "USR1079",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-06T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0129",
+    "user_id": "USR1011",
+    "shop_id": "SHOP-002",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-11T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0130",
+    "user_id": "USR1114",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-04T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0131",
+    "user_id": "USR1010",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-04T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0132",
+    "user_id": "USR1044",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-10T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0133",
+    "user_id": "USR1041",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-30T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0134",
+    "user_id": "USR1007",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-25T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0135",
+    "user_id": "USR1025",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-11T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0136",
+    "user_id": "USR1051",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-30T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0137",
+    "user_id": "USR1007",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-01T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0138",
+    "user_id": "USR1113",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-24T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0139",
+    "user_id": "USR1047",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-19T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0140",
+    "user_id": "USR1013",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-24T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0141",
+    "user_id": "USR1005",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-15T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0142",
+    "user_id": "USR1120",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-21T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0143",
+    "user_id": "USR1061",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-24T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0144",
+    "user_id": "USR1084",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-07T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0145",
+    "user_id": "USR1022",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-10T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0146",
+    "user_id": "USR1025",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-29T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0147",
+    "user_id": "USR1065",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-09T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0148",
+    "user_id": "USR1041",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-30T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0149",
+    "user_id": "USR1032",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-05T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0150",
+    "user_id": "USR1089",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 5
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-01T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0151",
+    "user_id": "USR1074",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-04T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0152",
+    "user_id": "USR1037",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-06T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0153",
+    "user_id": "USR1106",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-18T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0154",
+    "user_id": "USR1086",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-15T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0155",
+    "user_id": "USR1053",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-15T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0156",
+    "user_id": "USR1071",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-27T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0157",
+    "user_id": "USR1037",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-04T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0158",
+    "user_id": "USR1108",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-01T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0159",
+    "user_id": "USR1037",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-11T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0160",
+    "user_id": "USR1043",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-30T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0161",
+    "user_id": "USR1073",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-13T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0162",
+    "user_id": "USR1024",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-31T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0163",
+    "user_id": "USR1050",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-29T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0164",
+    "user_id": "USR1089",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-04T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0165",
+    "user_id": "USR1021",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-13T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0166",
+    "user_id": "USR1018",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-10T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0167",
+    "user_id": "USR1047",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-06T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0168",
+    "user_id": "USR1022",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-03T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0169",
+    "user_id": "USR1012",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-29T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0170",
+    "user_id": "USR1072",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 7
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-13T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0171",
+    "user_id": "USR1006",
+    "shop_id": "SHOP-014",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 2
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-23T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0172",
+    "user_id": "USR1024",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-09T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0173",
+    "user_id": "USR1011",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-12T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0174",
+    "user_id": "USR1023",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-26T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0175",
+    "user_id": "USR1097",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-20T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0176",
+    "user_id": "USR1020",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-03-13T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0177",
+    "user_id": "USR1031",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0178",
+    "user_id": "USR1057",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-04T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0179",
+    "user_id": "USR1030",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-06T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0180",
+    "user_id": "USR1039",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 1
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-04T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0181",
+    "user_id": "USR1101",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-21T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0182",
+    "user_id": "USR1097",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-31T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0183",
+    "user_id": "USR1104",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-04T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0184",
+    "user_id": "USR1033",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-22T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0185",
+    "user_id": "USR1012",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 1
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-13T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0186",
+    "user_id": "USR1103",
+    "shop_id": "SHOP-025",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-07T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0187",
+    "user_id": "USR1028",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-08T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0188",
+    "user_id": "USR1118",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0189",
+    "user_id": "USR1034",
+    "shop_id": "SHOP-012",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-02T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0190",
+    "user_id": "USR1048",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-27T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0191",
+    "user_id": "USR1020",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-22T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0192",
+    "user_id": "USR1098",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-11T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0193",
+    "user_id": "USR1093",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-01T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0194",
+    "user_id": "USR1018",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 24
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 23
+      }
+    ],
+    "date": "2026-03-15T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0195",
+    "user_id": "USR1002",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-03T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0196",
+    "user_id": "USR1068",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-16T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0197",
+    "user_id": "USR1052",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "rice",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-06T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0198",
+    "user_id": "USR1049",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-05T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0199",
+    "user_id": "USR1011",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 1
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-28T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0200",
+    "user_id": "USR1116",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-06T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0201",
+    "user_id": "USR1023",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-02T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0202",
+    "user_id": "USR1073",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-13T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0203",
+    "user_id": "USR1007",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-28T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0204",
+    "user_id": "USR1100",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-02T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0205",
+    "user_id": "USR1071",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-28T10:00:00"
+  },
+  {
+    "transaction_id": "TXN0206",
+    "user_id": "USR1035",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-25T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0207",
+    "user_id": "USR1047",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "sugar",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-06T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0208",
+    "user_id": "USR1017",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-12T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0209",
+    "user_id": "USR1046",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-06T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0210",
+    "user_id": "USR1100",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0211",
+    "user_id": "USR1035",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-10T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0212",
+    "user_id": "USR1054",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 4
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-03-31T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0213",
+    "user_id": "USR1059",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-09T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0214",
+    "user_id": "USR1108",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "wheat",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-03-25T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0215",
+    "user_id": "USR1042",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-14T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0216",
+    "user_id": "USR1038",
+    "shop_id": "SHOP-024",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      }
+    ],
+    "date": "2026-04-14T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0217",
+    "user_id": "USR1105",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-03-24T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0218",
+    "user_id": "USR1103",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-14T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0219",
+    "user_id": "USR1033",
+    "shop_id": "SHOP-022",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-10T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0220",
+    "user_id": "USR1069",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-14T14:00:00"
+  },
+  {
+    "transaction_id": "TXN0221",
+    "user_id": "USR1022",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-04-09T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0222",
+    "user_id": "USR1034",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 8
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-02T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0223",
+    "user_id": "USR1045",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 2
+      },
+      {
+        "item": "rice",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-31T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0224",
+    "user_id": "USR1045",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-22T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0225",
+    "user_id": "USR1061",
+    "shop_id": "SHOP-004",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 5
+      },
+      {
+        "item": "rice",
+        "quantity": 2
+      }
+    ],
+    "date": "2026-03-29T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0226",
+    "user_id": "USR1003",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-04-11T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0227",
+    "user_id": "USR1060",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-26T18:00:00"
+  },
+  {
+    "transaction_id": "TXN0228",
+    "user_id": "USR1051",
+    "shop_id": "SHOP-001",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-09T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0229",
+    "user_id": "USR1027",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 3
+      },
+      {
+        "item": "sugar",
+        "quantity": 6
+      },
+      {
+        "item": "wheat",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-15T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0230",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 7
+      },
+      {
+        "item": "rice",
+        "quantity": 6
+      },
+      {
+        "item": "oil",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-12T15:00:00"
+  },
+  {
+    "transaction_id": "TXN0231",
+    "user_id": "USR1091",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-04-09T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0232",
+    "user_id": "USR1016",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-03-20T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0233",
+    "user_id": "USR1066",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      }
+    ],
+    "date": "2026-03-27T17:00:00"
+  },
+  {
+    "transaction_id": "TXN0234",
+    "user_id": "USR1024",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "wheat",
+        "quantity": 3
+      },
+      {
+        "item": "oil",
+        "quantity": 5
+      },
+      {
+        "item": "wheat",
+        "quantity": 3
+      }
+    ],
+    "date": "2026-04-10T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0235",
+    "user_id": "USR1041",
+    "shop_id": "SHOP-015",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 8
+      },
+      {
+        "item": "wheat",
+        "quantity": 4
+      }
+    ],
+    "date": "2026-04-09T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0236",
+    "user_id": "USR1105",
+    "shop_id": "SHOP-013",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 7
+      },
+      {
+        "item": "oil",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-05T16:00:00"
+  },
+  {
+    "transaction_id": "TXN0237",
+    "user_id": "USR1022",
+    "shop_id": "SHOP-003",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      }
+    ],
+    "date": "2026-04-06T08:00:00"
+  },
+  {
+    "transaction_id": "TXN0238",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "oil",
+        "quantity": 8
+      }
+    ],
+    "date": "2026-04-04T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0239",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-019",
+    "items": [
+      {
+        "item": "sugar",
+        "quantity": 1
+      },
+      {
+        "item": "oil",
+        "quantity": 4
+      },
+      {
+        "item": "rice",
+        "quantity": 11
+      }
+    ],
+    "date": "2026-03-08T12:00:00"
+  },
+  {
+    "transaction_id": "TXN0240",
+    "user_id": "USR1058",
+    "shop_id": "SHOP-009",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 4
+      },
+      {
+        "item": "wheat",
+        "quantity": 6
+      }
+    ],
+    "date": "2026-03-23T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0241",
+    "user_id": "USR1004",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 28
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0242",
+    "user_id": "USR1004",
+    "shop_id": "SHOP-006",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 19
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0243",
+    "user_id": "USR1004",
+    "shop_id": "SHOP-007",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 21
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0244",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-002",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 26
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0245",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-018",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 23
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0246",
+    "user_id": "USR1015",
+    "shop_id": "SHOP-020",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 20
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0247",
+    "user_id": "USR1018",
+    "shop_id": "SHOP-011",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 24
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0248",
+    "user_id": "USR1018",
+    "shop_id": "SHOP-010",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 23
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0249",
+    "user_id": "USR1018",
+    "shop_id": "SHOP-017",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 18
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0250",
+    "user_id": "USR1029",
+    "shop_id": "SHOP-005",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 28
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0251",
+    "user_id": "USR1029",
+    "shop_id": "SHOP-002",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 23
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0252",
+    "user_id": "USR1029",
+    "shop_id": "SHOP-021",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 19
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0253",
+    "user_id": "USR1032",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 19
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0254",
+    "user_id": "USR1032",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 19
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0255",
+    "user_id": "USR1032",
+    "shop_id": "SHOP-023",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 25
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  },
+  {
+    "transaction_id": "TXN0256",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-008",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 27
+      }
+    ],
+    "date": "2026-04-05T09:00:00"
+  },
+  {
+    "transaction_id": "TXN0257",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-016",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 19
+      }
+    ],
+    "date": "2026-04-05T11:00:00"
+  },
+  {
+    "transaction_id": "TXN0258",
+    "user_id": "USR1036",
+    "shop_id": "SHOP-019",
+    "items": [
+      {
+        "item": "rice",
+        "quantity": 23
+      }
+    ],
+    "date": "2026-04-05T13:00:00"
+  }
+]
