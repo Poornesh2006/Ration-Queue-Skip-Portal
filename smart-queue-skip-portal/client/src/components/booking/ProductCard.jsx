@@ -8,7 +8,7 @@ const ProductCard = ({
   onQuantityChange,
 }) => (
   <article className="product-card animated-slide-up">
-    <img src={product.image} alt={product.name} className="product-image" />
+    <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
     <div className="card-heading">
       <h3>{product.name}</h3>
       <span className="stock-chip">{availableStock} in stock</span>

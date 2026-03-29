@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ToggleTheme from "./ToggleTheme";
 
-const Navbar = ({ title, user, onMenuToggle, showMenuButton = false }) => (
-  <header className="topbar glass-panel animated-fade">
+const Navbar = ({ title, user, onMenuToggle, showMenuButton = false, menuOpen = false }) => (
+  <header className="topbar glass-panel animated-fade" role="banner">
     <div className="topbar-brand">
       {showMenuButton && (
         <button
@@ -11,6 +11,7 @@ const Navbar = ({ title, user, onMenuToggle, showMenuButton = false }) => (
           className="menu-toggle"
           onClick={onMenuToggle}
           aria-label="Toggle sidebar"
+          aria-expanded={menuOpen}
         >
           <span />
           <span />

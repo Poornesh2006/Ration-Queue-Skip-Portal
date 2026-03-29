@@ -19,15 +19,15 @@ export const ProductTableSkeleton = ({ rows = 5 }) => (
       <tbody>
         {Array.from({ length: rows }, (_, index) => (
           <tr key={`skeleton-row-${index}`}>
-            <td><Skeleton className="table-skeleton-media" rounded /></td>
-            <td>
+            <td data-label="Image"><Skeleton className="table-skeleton-media" rounded /></td>
+            <td data-label="Name">
               <Skeleton className="table-skeleton-title" />
               <Skeleton className="table-skeleton-subtitle" />
             </td>
-            <td><Skeleton className="table-skeleton-chip" rounded /></td>
-            <td><Skeleton className="table-skeleton-value" /></td>
-            <td><Skeleton className="table-skeleton-value" /></td>
-            <td>
+            <td data-label="Type"><Skeleton className="table-skeleton-chip" rounded /></td>
+            <td data-label="Price"><Skeleton className="table-skeleton-value" /></td>
+            <td data-label="Stock"><Skeleton className="table-skeleton-value" /></td>
+            <td data-label="Actions">
               <div className="table-actions">
                 <Skeleton className="table-skeleton-action" rounded />
                 <Skeleton className="table-skeleton-action" rounded />
@@ -68,29 +68,30 @@ const ProductTable = ({ products, onEdit, onDelete }) => (
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <td>
+            <td data-label="Image">
               <div className="product-table-media">
                 <img
                   src="/images/products/rice.png"
                   alt={product.name}
+                  loading="lazy"
                   onError={(event) => {
                     event.currentTarget.src = "/images/misc/TamilNadu_Logo.svg.png";
                   }}
                 />
               </div>
             </td>
-            <td>
+            <td data-label="Name">
               <strong>{product.name}</strong>
               <span>{product.sku}</span>
             </td>
-            <td>
+            <td data-label="Type">
               <span className={`type-badge ${product.type}`}>{product.type}</span>
             </td>
-            <td>Rs {Number(product.price || 0).toFixed(2)}</td>
-            <td>
+            <td data-label="Price">Rs {Number(product.price || 0).toFixed(2)}</td>
+            <td data-label="Stock">
               {product.stockAvailable} {product.unit}
             </td>
-            <td>
+            <td data-label="Actions">
               <div className="table-actions">
                 <Button variant="ghost" type="button" className="table-action edit-action" onClick={() => onEdit(product)}>
                   Edit

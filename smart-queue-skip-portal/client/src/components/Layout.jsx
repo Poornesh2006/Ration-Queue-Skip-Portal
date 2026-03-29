@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import MobileBottomNav from "./MobileBottomNav";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
@@ -18,6 +19,7 @@ const Layout = ({ title, children }) => {
           title={title}
           user={user}
           showMenuButton={Boolean(user)}
+          menuOpen={sidebarOpen}
           onMenuToggle={() => setSidebarOpen((current) => !current)}
         />
         <header className="page-header animated-slide-up">
@@ -32,6 +34,7 @@ const Layout = ({ title, children }) => {
         </header>
         {children}
       </main>
+      <MobileBottomNav user={user} />
     </div>
   );
 };
