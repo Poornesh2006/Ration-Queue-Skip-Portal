@@ -52,6 +52,20 @@ const getDateBounds = (dateInput) => {
   return { start, end };
 };
 
+const toDateKey = (value) => {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return null;
+  }
+
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(
+    date.getDate()
+  ).padStart(2, "0")}`;
+};
+
+const isTrialBookingEnabled = () => process.env.ENABLE_TRIAL_BOOKING === "true";
+
 const sanitizeRequestedItems = (items = []) =>
   items
     .filter((entry) => entry?.item && Number(entry?.quantity) > 0)
@@ -59,6 +73,11 @@ const sanitizeRequestedItems = (items = []) =>
       item: String(entry.item).trim().toLowerCase(),
       quantity: Number(entry.quantity),
     }));
+
+const normalizeAllowedQuantity = (value) => {
+  const quantity = Number(value);
+  return Number.isFinite(quantity) && quantity > 0 ? quantity : 0;
+};
 
 const validateRequestedItems = ({ user, shop, items }) => {
   if (!items.length) {
@@ -85,7 +104,9 @@ const validateRequestedItems = ({ user, shop, items }) => {
                   ? entitlement.kerosene
                   : 0;
 
-    if (!entitlementValue) {
+    const allowedQty = normalizeAllowedQuantity(entitlementValue);
+
+    if (!allowedQty) {
       throw new ApiError(400, `${item} is not part of this card's entitlement`);
     }
 
@@ -93,7 +114,7 @@ const validateRequestedItems = ({ user, shop, items }) => {
       throw new ApiError(400, `${item} quantity must be at least 1`);
     }
 
-    if (quantity > entitlementValue) {
+    if (quantity > allowedQty) {
       throw new ApiError(400, `${item} quantity exceeds your entitlement`);
     }
 
@@ -169,7 +190,12 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
     throw new ApiError(400, "A valid booking date is required");
   }
 
-  if (normalizedDate.getTime() < Date.now() - 60 * 1000) {
+  const todayStart = new Date();
+  todayStart.setHours(0, 0, 0, 0);
+  const bookingDayStart = new Date(normalizedDate);
+  bookingDayStart.setHours(0, 0, 0, 0);
+
+  if (bookingDayStart < todayStart) {
     throw new ApiError(400, "Booking date cannot be in the past");
   }
 
@@ -184,6 +210,15 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
 
   if (!shop || !slot) {
     throw new ApiError(404, "Selected shop or slot does not exist");
+  }
+
+  if (slot.slotDate) {
+    const slotDateKey = toDateKey(slot.slotDate);
+    const bookingDateKey = toDateKey(normalizedDate);
+
+    if (slotDateKey !== bookingDateKey) {
+      throw new ApiError(400, "Selected slot does not belong to the chosen date");
+    }
   }
 
   validatePriorityAccess(slot, targetUser);
@@ -202,7 +237,16 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
   });
 
   if (existingBooking) {
-    throw new ApiError(409, "You already have a booking for this day");
+    if (!isTrialBookingEnabled()) {
+      throw new ApiError(409, "You already have a booking for this day");
+    }
+
+    await Promise.all([
+      Booking.findByIdAndUpdate(existingBooking._id, { status: "cancelled" }),
+      Slot.findByIdAndUpdate(existingBooking.slot, {
+        $inc: { bookedCount: -1 },
+      }),
+    ]);
   }
 
   const slotBookings = await Booking.countDocuments({
@@ -254,6 +298,8 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
       slotTime: slot.slotTime,
     });
     bookingRecord.qrCodeToken = qrPayload.token;
+    bookingRecord.qrData = qrPayload.qrPayload;
+    bookingRecord.qrCodeDataUrl = qrPayload.qrCodeDataUrl;
     await bookingRecord.save();
 
     const upiPayment =
@@ -307,6 +353,7 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
         bookingSource,
         requestedItems,
         totalAmount: orderSummary.totalAmount,
+        qrCodeToken: qrPayload.token,
       },
     });
 
@@ -339,7 +386,12 @@ const createBookingRecord = async ({ actor, shopId, slotId, date, bookingSource,
     }
 
     if (error?.code === 11000) {
-      throw new ApiError(409, "You already have a booking for this day");
+      throw new ApiError(
+        409,
+        isTrialBookingEnabled()
+          ? "Trial booking was refreshed. Please choose a slot again."
+          : "You already have a booking for this day"
+      );
     }
 
     throw error instanceof ApiError ? error : new ApiError(500, error.message || "Booking failed");
@@ -379,6 +431,7 @@ export const getMyBookings = asyncHandler(async (req, res) => {
     Booking.find({ user: req.user._id })
     .populate("shop", "shopId shopName location")
     .populate("slot", "slotTime maxLimit")
+    .populate("user", "name rationCardNumber")
     .sort({ date: -1, createdAt: -1 })
     .skip(skip)
     .limit(limit),
@@ -393,6 +446,23 @@ export const getMyBookings = asyncHandler(async (req, res) => {
       total,
       totalPages: Math.max(1, Math.ceil(total / limit)),
     },
+  });
+});
+
+export const getUserBookingHistory = asyncHandler(async (req, res) => {
+  const [bookings, total] = await Promise.all([
+    Booking.find({ user: req.user._id })
+      .populate("shop", "shopId shopName location")
+      .populate("slot", "slotTime maxLimit")
+      .populate("user", "name rationCardNumber")
+      .sort({ date: -1, createdAt: -1 })
+      .limit(50),
+    Booking.countDocuments({ user: req.user._id }),
+  ]);
+
+  sendResponse(res, 200, "User booking history fetched successfully", {
+    bookings,
+    total,
   });
 });
 
@@ -495,6 +565,9 @@ export const confirmBookingPayment = asyncHandler(async (req, res) => {
       totalAmount: booking.totalAmount,
       paymentStatus: booking.paymentStatus,
       transactionId: booking.transactionId,
+      slotTime: booking.slot?.slotTime,
+      date: booking.date,
+      qrCodeToken: booking.qrCodeToken,
     },
     ...historyContext,
   });

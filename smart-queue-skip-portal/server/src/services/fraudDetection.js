@@ -8,7 +8,17 @@ const percentile = (values, p) => {
   return sorted[index];
 };
 
-const getDateKey = (date) => new Date(date).toISOString().slice(0, 10);
+const getDateKey = (value) => {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return null;
+  }
+
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(
+    date.getDate()
+  ).padStart(2, "0")}`;
+};
 
 const sumTransactionQuantity = (transaction) =>
   transaction.items.reduce((total, item) => total + item.quantity, 0);

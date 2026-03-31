@@ -56,7 +56,6 @@ const Payment = () => {
         items: [...(order.freeItems || []), ...(order.paidItems || [])],
       };
 
-      orderStorage.addHistory(finalOrder);
       orderStorage.setOrder(finalOrder);
       setOrder(finalOrder);
       setMessage(

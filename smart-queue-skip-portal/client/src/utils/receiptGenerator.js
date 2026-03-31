@@ -40,6 +40,14 @@ export const generateReceiptPdf = (order) => {
   doc.text(`Payment Status: ${order.paymentStatus || "-"}`, 20, line);
   line += 8;
   doc.text(`Transaction ID: ${order.transactionId || "-"}`, 20, line);
+  line += 12;
+
+  if (order.qrCodeDataUrl) {
+    doc.text("Booking QR", 20, line);
+    line += 4;
+    doc.addImage(order.qrCodeDataUrl, "PNG", 20, line, 45, 45);
+    line += 52;
+  }
 
   doc.save(`receipt-${order.receiptNumber || Date.now()}.pdf`);
 };

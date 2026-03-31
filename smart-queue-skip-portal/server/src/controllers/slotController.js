@@ -6,6 +6,7 @@ import { predictDemandForDate } from "../services/demandPrediction.js";
 import { recommendBestShopAndSlot } from "../services/recommendation.js";
 import {
   ensureDynamicSlotsForDate,
+  ensureTrialSlotsForDate,
   getPriorityCategory,
   recommendSlot,
 } from "../services/slotEngine.js";
@@ -24,7 +25,9 @@ const getDateKey = (value) => {
     return null;
   }
 
-  return date.toISOString().slice(0, 10);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(
+    date.getDate()
+  ).padStart(2, "0")}`;
 };
 
 export const getAvailableSlots = asyncHandler(async (req, res) => {
@@ -39,6 +42,7 @@ export const getAvailableSlots = asyncHandler(async (req, res) => {
 
   await predictDemandForDate(queryDate);
   await ensureDynamicSlotsForDate(queryDate);
+  await ensureTrialSlotsForDate(queryDate);
 
   const slotQuery = dateParam
     ? {
@@ -81,7 +85,7 @@ export const getAvailableSlots = asyncHandler(async (req, res) => {
         ...slot,
         bookedCount,
         remaining,
-        effectiveDate: dateKey ? `${dateKey}T00:00:00.000Z` : null,
+        effectiveDate: dateKey ? `${dateKey}T00:00:00` : null,
         dateKey,
         priorityEligible:
           !slot.priorityOnly ||

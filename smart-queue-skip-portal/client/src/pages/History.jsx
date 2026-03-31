@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
+import { generateReceiptPdf } from "../utils/receiptGenerator";
 import Card from "../components/Card";
 import EmptyState from "../components/EmptyState";
 import Layout from "../components/Layout";
 import Skeleton from "../components/Skeleton";
 import { bookingService } from "../services/bookingService";
 import { userService } from "../services/userService";
-import { orderStorage } from "../utils/orderStorage";
 
 const History = () => {
   const [bookings, setBookings] = useState([]);
-  const [purchaseHistory, setPurchaseHistory] = useState([]);
   const [activityHistory, setActivityHistory] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -22,11 +21,10 @@ const History = () => {
       setError("");
       try {
         const [bookingData, historyData] = await Promise.all([
-          bookingService.getMyBookings({ page, limit: 10 }),
-          userService.getMyHistory({ page, limit: 10 }),
+          bookingService.getUserBookingHistory(),
+          userService.getHistory({ page, limit: 10 }),
         ]);
         setBookings(bookingData.bookings);
-        setPurchaseHistory(orderStorage.getHistory());
         setActivityHistory(historyData.history);
         setPagination(historyData.pagination);
       } catch (requestError) {
@@ -64,37 +62,13 @@ const History = () => {
             </article>
           ))}
 
-          {!loading && purchaseHistory.length === 0 && bookings.length === 0 && activityHistory.length === 0 && (
+          {!loading && bookings.length === 0 && activityHistory.length === 0 && (
             <EmptyState
               title="No data available"
               description="No bookings or purchase history are available yet."
               icon="history"
             />
           )}
-
-          {purchaseHistory.map((entry, index) => (
-            <article key={`${entry.purchasedAt}-${index}`} className="history-card animated-slide-up">
-              <div className="history-card-header">
-                <strong>Paid Order</strong>
-                <span>{new Date(entry.purchasedAt).toLocaleString()}</span>
-              </div>
-              <p>Payment: {entry.paymentMethod}</p>
-              <p>Payment Status: {entry.paymentStatus || "paid"}</p>
-              <p>Transaction ID: {entry.transactionId || "-"}</p>
-              <p>Total: Rs {Number(entry.totalAmount || entry.total || 0).toFixed(2)}</p>
-              <p>Slot: {entry.slotTime}</p>
-              <div className="history-items">
-                {(entry.items || []).map((item) => (
-                  <div key={`${item.item}-${item.quantity}`} className="history-line">
-                    {item.image && <img src={item.image} alt={item.name} className="history-thumb" />}
-                    <span>
-                      {item.name} x {item.quantity}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </article>
-          ))}
 
           {bookings.map((booking) => (
             <article key={booking._id} className="history-card animated-slide-up">
@@ -106,7 +80,52 @@ const History = () => {
               <p>{booking.shop.location}</p>
               <p>{booking.slot.slotTime}</p>
               <p>Source: {booking.bookingSource}</p>
+              <p>Payment Status: {booking.paymentStatus}</p>
+              <p>Total: Rs {Number(booking.totalAmount || 0).toFixed(2)}</p>
               <span className={`status-badge ${booking.status}`}>{booking.status}</span>
+              {!!booking.requestedItems?.length && (
+                <div className="history-items">
+                  {booking.requestedItems.map((item) => (
+                    <div key={`${booking._id}-${item.item}`} className="history-line">
+                      <span>
+                        {item.item} x {item.quantity}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {booking.qrCodeDataUrl && (
+                <div className="qr-card">
+                  <img src={booking.qrCodeDataUrl} alt="Booking QR code" width="160" height="160" />
+                </div>
+              )}
+              <div className="inline-actions">
+                <button
+                  className="ghost-button"
+                  type="button"
+                  onClick={() =>
+                    generateReceiptPdf({
+                      receiptNumber: booking.receiptNumber,
+                      userName: booking.user?.name,
+                      rationCardNumber: booking.user?.rationCardNumber,
+                      slotTime: booking.slot?.slotTime,
+                      date: new Date(booking.date).toLocaleDateString(),
+                      items: (booking.requestedItems || []).map((item) => ({
+                        name: item.item,
+                        quantity: item.quantity,
+                        unit: "",
+                        amount: 0,
+                      })),
+                      totalAmount: booking.totalAmount,
+                      paymentStatus: booking.paymentStatus,
+                      transactionId: booking.transactionId,
+                      qrCodeDataUrl: booking.qrCodeDataUrl,
+                    })
+                  }
+                >
+                  Download Receipt
+                </button>
+              </div>
             </article>
           ))}
 

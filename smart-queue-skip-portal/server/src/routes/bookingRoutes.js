@@ -4,6 +4,7 @@ import {
   createManualBooking,
   createBooking,
   getMyBookings,
+  getUserBookingHistory,
   markBookingDelivered,
   verifyBookingQr,
 } from "../controllers/bookingController.js";
@@ -18,6 +19,7 @@ router
   .route("/")
   .post(validateRequiredFields(["shopId", "slotId", "date"]), createBooking)
   .get(getMyBookings);
+router.get("/user", getUserBookingHistory);
 router.post(
   "/manual",
   authorizeRoles("admin", "shop_owner"),

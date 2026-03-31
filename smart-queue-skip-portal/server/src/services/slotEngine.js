@@ -2,6 +2,16 @@ import { Booking } from "../models/Booking.js";
 import { Slot } from "../models/Slot.js";
 
 const SLOT_DURATION_MINUTES = 30;
+const DEFAULT_TRIAL_SLOT_TIMES = [
+  "08:00 AM - 09:00 AM",
+  "09:00 AM - 10:00 AM",
+  "10:00 AM - 11:00 AM",
+  "11:00 AM - 12:00 PM",
+  "12:00 PM - 01:00 PM",
+  "01:00 PM - 02:00 PM",
+  "02:00 PM - 03:00 PM",
+  "03:00 PM - 04:00 PM",
+];
 
 const parseEndMinutes = (slotTime) => {
   const [, endLabel] = slotTime.split(" - ");
@@ -80,6 +90,35 @@ export const ensureDynamicSlotsForDate = async (dateInput) => {
   });
 
   return [...slots, dynamicSlot];
+};
+
+export const ensureTrialSlotsForDate = async (dateInput) => {
+  if (process.env.ENABLE_TRIAL_BOOKING !== "true") {
+    return [];
+  }
+
+  const { start, end } = getDateBounds(dateInput);
+  const existingSlots = await Slot.find({
+    slotDate: { $gte: start, $lte: end },
+  }).sort({ slotTime: 1 });
+
+  if (existingSlots.length > 0) {
+    return existingSlots;
+  }
+
+  const createdSlots = await Slot.insertMany(
+    DEFAULT_TRIAL_SLOT_TIMES.map((slotTime) => ({
+      slotTime,
+      slotDate: start,
+      maxLimit: 20,
+      bookedCount: 0,
+      priorityOnly: false,
+      priorityCategory: "standard",
+      isDynamic: false,
+    }))
+  );
+
+  return createdSlots;
 };
 
 export const getPriorityCategory = (user) => {

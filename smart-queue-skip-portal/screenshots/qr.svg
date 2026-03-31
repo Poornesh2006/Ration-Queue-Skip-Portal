@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#10251b"/>
+  <rect x="40" y="40" width="1200" height="640" rx="32" fill="#152233" stroke="#d0ad2e" stroke-width="2"/>
+  <text x="80" y="120" fill="#f4f7f3" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">QR Verification</text>
+  <rect x="420" y="180" width="440" height="440" rx="32" fill="#08150f" stroke="#2f5d46"/>
+  <rect x="500" y="260" width="280" height="280" fill="#ffffff"/>
+  <rect x="530" y="290" width="60" height="60" fill="#000000"/>
+  <rect x="690" y="290" width="60" height="60" fill="#000000"/>
+  <rect x="530" y="450" width="60" height="60" fill="#000000"/>
+  <rect x="610" y="370" width="80" height="80" fill="#000000"/>
+  <text x="80" y="650" fill="#c7d2cc" font-family="Segoe UI, Arial, sans-serif" font-size="18">Replace this placeholder with the real QR screenshot.</text>
+</svg>

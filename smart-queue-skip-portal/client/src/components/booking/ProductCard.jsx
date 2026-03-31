@@ -14,7 +14,7 @@ const ProductCard = ({
       <span className="stock-chip">{availableStock} in stock</span>
     </div>
     <p>{product.description}</p>
-    <p className="entitlement-line">Entitlement: {product.maxQuantity}</p>
+    <p className="entitlement-line">Allowed quantity: {maxQuantity}</p>
     <QuantitySelector
       quantity={quantity}
       onDecrease={() => onQuantityChange(quantity - 1)}

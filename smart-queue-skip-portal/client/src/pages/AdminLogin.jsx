@@ -51,7 +51,7 @@ const AdminLogin = () => {
               name="adminId"
               value={formData.adminId}
               onChange={handleChange}
-              placeholder="TN-ADM-0001"
+              placeholder="TN-NIL-1001"
               required
             />
           </label>

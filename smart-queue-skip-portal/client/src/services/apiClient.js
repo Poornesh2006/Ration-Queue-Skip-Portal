@@ -1,6 +1,23 @@
 import axios from "axios";
 import { storage } from "../utils/storage";
 
+const sanitizeApiBaseUrl = (value) => {
+  const candidate = String(value || "").trim();
+
+  if (!candidate) {
+    return "";
+  }
+
+  if (
+    candidate.includes("your-backend-url.onrender.com") ||
+    candidate.includes("your-backend-domain.onrender.com")
+  ) {
+    return "";
+  }
+
+  return candidate.replace(/\/+$/, "");
+};
+
 const resolveDefaultApiBaseUrl = () => {
   if (typeof window === "undefined") {
     return "http://localhost:5000/api";
@@ -16,8 +33,19 @@ const resolveDefaultApiBaseUrl = () => {
   return `${origin}/api`;
 };
 
+const configuredBaseUrl = sanitizeApiBaseUrl(import.meta.env.VITE_API_BASE_URL);
+const resolvedBaseUrl = configuredBaseUrl || resolveDefaultApiBaseUrl();
+
+if (import.meta.env.DEV) {
+  console.info("API URL:", resolvedBaseUrl);
+}
+
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || resolveDefaultApiBaseUrl(),
+  baseURL: resolvedBaseUrl,
+});
+
+const delay = (ms) => new Promise((resolve) => {
+  window.setTimeout(resolve, ms);
 });
 
 apiClient.interceptors.request.use((config) => {
@@ -32,7 +60,20 @@ apiClient.interceptors.request.use((config) => {
 
 apiClient.interceptors.response.use(
   (response) => response,
-  (error) => {
+  async (error) => {
+    const config = error.config || {};
+    const isGetRequest = String(config.method || "get").toLowerCase() === "get";
+    const shouldRetry =
+      !config.__retried &&
+      isGetRequest &&
+      (!error.response || [502, 503, 504].includes(error.response.status));
+
+    if (shouldRetry) {
+      config.__retried = true;
+      await delay(350);
+      return apiClient(config);
+    }
+
     if (error.response?.status === 401) {
       storage.clearAuth();
 

@@ -133,6 +133,13 @@ const AdminHistory = () => {
                 <p>{new Date(entry.timestamp).toLocaleString()}</p>
                 <p>Device: {entry.device || "Unknown device"}</p>
                 <p>IP: {entry.ipAddress || "-"}</p>
+                {entry.details?.method && <p>Method: {entry.details.method}</p>}
+                {entry.details?.shopName && <p>Shop: {entry.details.shopName}</p>}
+                {entry.details?.slotTime && <p>Slot: {entry.details.slotTime}</p>}
+                {entry.details?.transactionId && <p>Transaction: {entry.details.transactionId}</p>}
+                {entry.details?.totalAmount !== undefined && (
+                  <p>Total Amount: Rs {Number(entry.details.totalAmount || 0).toFixed(2)}</p>
+                )}
               </article>
             ))}
           </div>

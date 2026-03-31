@@ -26,6 +26,18 @@ const CORE_STOCK_ITEMS = ["rice", "wheat", "sugar", "kerosene"];
 const DEFAULT_HISTORY_LIMIT = 50;
 const MAX_HISTORY_LIMIT = 200;
 
+const getDateKey = (value) => {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return null;
+  }
+
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(
+    date.getDate()
+  ).padStart(2, "0")}`;
+};
+
 const buildStockAlerts = (shops, products = []) => [
   ...shops.flatMap((shop) =>
     CORE_STOCK_ITEMS.flatMap((item) => {
@@ -80,13 +92,13 @@ const buildUsageSeries = (bookings, transactions) => {
   const usageMap = {};
 
   bookings.forEach((booking) => {
-    const key = new Date(booking.date).toISOString().slice(0, 10);
+    const key = getDateKey(booking.date);
     usageMap[key] = usageMap[key] || { date: key, bookings: 0, transactions: 0 };
     usageMap[key].bookings += 1;
   });
 
   transactions.forEach((transaction) => {
-    const key = new Date(transaction.transactionDate).toISOString().slice(0, 10);
+    const key = getDateKey(transaction.transactionDate);
     usageMap[key] = usageMap[key] || { date: key, bookings: 0, transactions: 0 };
     usageMap[key].transactions += 1;
   });
@@ -136,7 +148,7 @@ const buildItemDistribution = (transactions = []) => {
 
 const buildActionSeries = (historyEntries = []) => {
   const grouped = historyEntries.reduce((acc, entry) => {
-    const key = new Date(entry.timestamp).toISOString().slice(0, 10);
+    const key = getDateKey(entry.timestamp);
     acc[key] = acc[key] || { date: key, login: 0, logout: 0, booking: 0, purchase: 0 };
     acc[key][entry.actionType] += 1;
     return acc;

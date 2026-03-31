@@ -71,6 +71,15 @@ const bookingSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
+    qrData: {
+      type: mongoose.Schema.Types.Mixed,
+      default: null,
+    },
+    qrCodeDataUrl: {
+      type: String,
+      trim: true,
+      default: "",
+    },
     status: {
       type: String,
       enum: ["booked", "completed", "cancelled"],
@@ -86,7 +95,13 @@ const bookingSchema = new mongoose.Schema(
   }
 );
 
-bookingSchema.index({ user: 1, date: 1 }, { unique: true });
+bookingSchema.index(
+  { user: 1, date: 1, status: 1 },
+  {
+    unique: true,
+    partialFilterExpression: { status: "booked" },
+  }
+);
 bookingSchema.index({ slot: 1, date: 1, status: 1 });
 bookingSchema.index({ shop: 1, date: 1, status: 1 });
 

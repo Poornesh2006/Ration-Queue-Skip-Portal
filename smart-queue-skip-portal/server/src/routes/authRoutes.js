@@ -48,6 +48,11 @@ router.post(
   verifyUser
 );
 router.post(
+  "/verify",
+  validateRequiredFields(["aadhaar_number", "phone_number"]),
+  verifyUser
+);
+router.post(
   "/send-otp",
   otpLimiter,
   validateRequiredFields(["aadhaar_number", "phone_number"]),

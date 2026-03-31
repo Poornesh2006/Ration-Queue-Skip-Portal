@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import { app } from "./app.js";
 import { connectDB } from "./config/db.js";
+import { Booking } from "./models/Booking.js";
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ const startServer = async () => {
     }
 
     await connectDB();
+    await Booking.syncIndexes();
     app.listen(port, () => {
       console.log(`Server running on port ${port}`);
     });

@@ -9,6 +9,10 @@ export const bookingService = {
     const { data } = await apiClient.get("/bookings", { params });
     return data;
   },
+  getUserBookingHistory: async () => {
+    const { data } = await apiClient.get("/bookings/user");
+    return data;
+  },
   createManualBooking: async (payload) => {
     const { data } = await apiClient.post("/bookings/manual", payload);
     return data;

@@ -8,6 +8,7 @@ import EmptyState from "../components/EmptyState";
 import Layout from "../components/Layout";
 import Skeleton from "../components/Skeleton";
 import { useAuth } from "../context/AuthContext";
+import { authService } from "../services/authService";
 import { bookingService } from "../services/bookingService";
 import { grievanceService } from "../services/grievanceService";
 import { shopService } from "../services/shopService";
@@ -36,7 +37,9 @@ const getDateKey = (value) => {
     return null;
   }
 
-  return date.toISOString().slice(0, 10);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(
+    date.getDate()
+  ).padStart(2, "0")}`;
 };
 
 const deriveAvailableDates = (slots = []) =>
@@ -97,6 +100,7 @@ const buildFallbackEntitlement = (user) => {
 const Booking = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
+  const [profileUser, setProfileUser] = useState(user);
   const [shops, setShops] = useState([]);
   const [slots, setSlots] = useState([]);
   const [availableDates, setAvailableDates] = useState([]);
@@ -135,10 +139,35 @@ const Booking = () => {
     window.speechSynthesis.speak(utterance);
   };
 
-  const entitlement = user?.entitlement || buildFallbackEntitlement(user);
+  useEffect(() => {
+    let ignore = false;
+
+    const loadProfile = async () => {
+      try {
+        const data = await authService.getCurrentUser();
+
+        if (!ignore) {
+          setProfileUser(data.user || user);
+        }
+      } catch {
+        if (!ignore) {
+          setProfileUser(user);
+        }
+      }
+    };
+
+    loadProfile();
+
+    return () => {
+      ignore = true;
+    };
+  }, [user]);
+
+  const activeUser = profileUser || user;
+  const entitlement = activeUser?.entitlement || buildFallbackEntitlement(activeUser);
   const products = useMemo(
     () =>
-      (productCatalog[user?.cardType] || productCatalog.NPHH)
+      (productCatalog[activeUser?.cardType] || productCatalog.NPHH)
         .map((product) => {
           const entitlementLimit =
             product.id === "rice"
@@ -163,7 +192,7 @@ const Booking = () => {
           };
         })
         .filter((product) => product.maxQuantity > 0),
-    [entitlement, user?.cardType]
+    [activeUser?.cardType, entitlement]
   );
 
   useEffect(() => {
@@ -212,6 +241,13 @@ const Booking = () => {
       total: subtotal + gst,
     };
   }, [products, selectedProducts, selectedShop]);
+
+  const getMaxAllowedQuantity = (productId) => {
+    const product = products.find((entry) => entry.id === productId);
+    const maxStock = getAvailableStock(productId);
+    const allowedQty = Math.max(0, Number(product?.maxQuantity) || 0);
+    return Math.max(0, Math.min(maxStock, allowedQty));
+  };
 
   useEffect(() => {
     const loadShops = async () => {
@@ -306,15 +342,44 @@ const Booking = () => {
 
   const handleQuantityChange = (productId, nextQuantity) => {
     const product = products.find((entry) => entry.id === productId);
-    const maxStock = getAvailableStock(productId);
-    const maxEntitlement = product?.maxQuantity || 0;
-    const safeQuantity = Math.min(maxStock, maxEntitlement, Math.max(0, nextQuantity));
+    const maxAllowed = getMaxAllowedQuantity(productId);
+    const selectedQty = Math.max(0, Number(nextQuantity) || 0);
 
+    if (import.meta.env.DEV) {
+      console.info("Allowed:", maxAllowed);
+      console.info("Selected:", selectedQty);
+    }
+
+    if (selectedQty > maxAllowed) {
+      setError(`Limit exceeded for ${product?.name || "this item"}. Allowed quantity is ${maxAllowed}.`);
+      setSelectedProducts((current) => ({
+        ...current,
+        [productId]: maxAllowed,
+      }));
+      return;
+    }
+
+    setError("");
     setSelectedProducts((current) => ({
       ...current,
-      [productId]: safeQuantity,
+      [productId]: selectedQty,
     }));
   };
+
+  useEffect(() => {
+    if (!error || (!error.includes("entitlement") && !error.includes("Limit exceeded"))) {
+      return;
+    }
+
+    const hasInvalidSelection = products.some((product) => {
+      const selectedQty = selectedProducts[product.id] || 0;
+      return selectedQty > getMaxAllowedQuantity(product.id);
+    });
+
+    if (!hasInvalidSelection) {
+      setError("");
+    }
+  }, [error, products, selectedProducts, selectedShop]);
 
   const handleBooking = async (event) => {
     event.preventDefault();
@@ -405,7 +470,18 @@ const Booking = () => {
           : deriveAvailableDates(refreshed.slots || [])
       );
     } catch (requestError) {
-      setError(requestError.response?.data?.message || "Booking failed");
+      const message = requestError.response?.data?.message || "Booking failed";
+
+      if (message.includes("entitlement")) {
+        try {
+          const data = await authService.getCurrentUser();
+          setProfileUser(data.user || user);
+        } catch {
+          // Keep the current profile fallback if refresh fails.
+        }
+      }
+
+      setError(message);
     } finally {
       setSubmitting(false);
     }
@@ -633,6 +709,7 @@ const Booking = () => {
           <div className="card-heading">
             <h3>You will receive</h3>
             <span className="stock-chip">{user?.cardType || "Card"}</span>
+            <span className="stock-chip">{activeUser?.cardType || "Card"}</span>
           </div>
           <div className="list-grid compact-grid">
             <article className="list-card">
