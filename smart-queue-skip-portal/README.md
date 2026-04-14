@@ -94,11 +94,13 @@ Smart Queue Skip Portal delivers a digital ration shop experience for Tamil Nadu
 
 ## Screenshots
 
-- Screenshot 1: Login and OTP verification
-- Screenshot 2: Slot booking interface
-- Screenshot 3: Product selection and ration calculation
-- Screenshot 4: QR code generation and admin scanner
-- Screenshot 5: Admin analytics dashboard
+![Login Screen](screenshots/login.png)
+
+![Booking Interface](screenshots/booking.png)
+
+![QR Code Wallet](screenshots/qr.png)
+
+![Admin Dashboard](screenshots/admin.png)
 
 ---
 
@@ -160,8 +162,15 @@ Create a `.env` file in `server/` with:
 
 ## Demo Accounts
 
-- Admin: `TN-NIL-1001` / `Admin@123`
-- User: `TN-THA-1007` / `Password@123`
+- Admin login:
+  - Admin ID (ration card): `TN-NIL-1001`
+  - Password: `Admin@123`
+- Citizen demo login:
+  - Aadhaar Number: `234567890006`
+  - Phone Number: `9000000006`
+  - Login method: Aadhaar + OTP verification (no password required)
+
+> Note: In demo mode, the OTP is displayed on the login screen when `SHOW_DEMO_OTP=true` or when the Fast2SMS API key is not configured.
 
 ---
 
